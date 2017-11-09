@@ -7,8 +7,8 @@ for i in glob.glob("*.*"):
 
 	if(i == "rename.py"):
 		os.remove(i)
-
-    last =  i.rfind('Material')
-    print i[last+9:]
-    
-    os.rename(i,i[last+9:])
+	else :
+	    last =  i.rfind('Material')
+	    print i[last+9:]
+	    
+	    os.rename(i,i[last+9:])
